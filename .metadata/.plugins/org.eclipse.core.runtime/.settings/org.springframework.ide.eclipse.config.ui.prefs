@@ -30,5 +30,13 @@
 //com.springsource.config.ui.prefs.activePageIndex\:/WebStudy06_SpringBoard/src/main/resources/com/springboard/spring/conf/security-context.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/WebStudy06_SpringBoard/src/main/webapp/WEB-INF/spring/servlet-context.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/WebStudy06_SpringBoard/src/main/webapp/WEB-INF/spring/view-controller.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/ddit-api-test/src/main/resources/kr/or/ddit/spring/conf/aop-context.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/ddit-api-test/src/main/resources/kr/or/ddit/spring/conf/application-context.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/ddit-api-test/src/main/resources/kr/or/ddit/spring/conf/datasource-context.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/ddit-api-test/src/main/resources/kr/or/ddit/spring/conf/mapper-context.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/ddit-api-test/src/main/resources/kr/or/ddit/spring/conf/message-context.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/ddit-api-test/src/main/resources/kr/or/ddit/spring/conf/security-context.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/ddit-api-test/src/main/webapp/WEB-INF/spring/servlet-context.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/ddit-api-test/src/main/webapp/WEB-INF/spring/view-controller.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
 com.springsource.config.ui.prefs.tabs.dialog=always
 eclipse.preferences.version=1

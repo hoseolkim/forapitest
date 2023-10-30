@@ -1,9 +1,0 @@
-package com.springboard.board;
-
-public class InvalidPasswordException extends RuntimeException {
-
-	public InvalidPasswordException() {
-		
-	}
-	
-}

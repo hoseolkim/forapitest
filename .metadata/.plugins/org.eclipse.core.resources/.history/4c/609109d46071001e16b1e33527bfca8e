@@ -1,5 +1,0 @@
-package com.springboard.advice;
-
-public class LoggingAdvice {
-
-}
