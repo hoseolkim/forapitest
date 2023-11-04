@@ -1,0 +1,4 @@
+kr\or\ddit\advice\LoggingAdvice.class
+kr\or\ddit\calendar\service\CalendarServiceImpl.class
+kr\or\ddit\calendar\controller\CalendarController.class
+kr\or\ddit\calendar\vo\CalendarEventVO.class

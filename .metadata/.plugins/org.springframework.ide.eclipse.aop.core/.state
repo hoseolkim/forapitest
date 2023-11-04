@@ -1,7 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
-<aop-project name="WebStudy06_SpringBoard"/>
 <aop-project name="ddit-api-test"/>
-<aop-project name="AlbaManage"/>
-<aop-project name="WebStudy05_SpringMVC"/>
 </aop-reference-model>

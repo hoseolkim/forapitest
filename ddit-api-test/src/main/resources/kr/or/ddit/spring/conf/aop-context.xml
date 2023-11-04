@@ -20,18 +20,18 @@
 		</tx:attributes>
 	</tx:advice>
 	
-	<bean class="kr.or.ddit.advice.LoggingAdvice" id="loggingAdvice" />
+<!-- 	<bean class="kr.or.ddit.advice.LoggingAdvice" id="loggingAdvice" /> -->
 	
-	<aop:config>
+<!-- 	<aop:config> -->
 		
-		<aop:pointcut expression="execution(* kr.or.ddit..service.*.*(..))" id="pointcut"/>
-		<aop:advisor advice-ref="txAdvice" pointcut-ref="pointcut" />
-		<aop:aspect ref="loggingAdvice">
+<!-- 		<aop:pointcut expression="execution(* kr.or.ddit..service.*.*(..))" id="pointcut"/> -->
+<!-- 		<aop:advisor advice-ref="txAdvice" pointcut-ref="pointcut" /> -->
+<!-- 		<aop:aspect ref="loggingAdvice"> -->
 <!-- 			<aop:before method="before" pointcut-ref="pointcut"/> -->
 <!-- 			<aop:after method="after" pointcut-ref="pointcut"/> -->
-			<aop:around method="around" pointcut-ref="pointcut" />
-		</aop:aspect>
+<!-- 			<aop:around method="around" pointcut-ref="pointcut" /> -->
+<!-- 		</aop:aspect> -->
 		
-	</aop:config>
+<!-- 	</aop:config> -->
 	
 </beans>

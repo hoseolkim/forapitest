@@ -18,6 +18,8 @@
 <button id="makeCalendar">달력 생성</button>
 <button id="refreshCalendar">달력 새로고침</button>
 <button id="getEventBtn">이벤트 갖고오기</button>
+<button id="ajaxBtn">아작스데이터 갖고오기</button>
+
 
 <div id="exampleCalendar">
 </div>
@@ -37,25 +39,27 @@
 	// 기본 캘린더 세팅 객체
 	let calendarSettings = {
 		headerToolbar: {
-			left: 'prev,next today',
+			left: 'prev,next,today',
 			center: 'title',
-			right: 'dayGridMonth,timeGridWeek,timeGridDay'
+			right: 'dayGridMonth,dayGridWeek,timeGridDay'
 		},
         initialDate: new Date(),
         navLinks: true, // can click day/week names to navigate views
         selectable: true,
         selectMirror: true,
         select: function(arg) {
-			var title = prompt('Event Title:');
-			if (title) {
-				calendar.addEvent({
-				title: title,
-				start: arg.start,
-				end: arg.end,
-				allDay: arg.allDay
-				})
-			}
-			calendar.unselect()
+			console.log(arg);
+			console.log(calendar);
+			// var title = prompt('Event Title:');
+			// if (title) {
+			// 	calendar.addEvent({
+			// 	title: title,
+			// 	start: arg.start,
+			// 	end: arg.end,
+			// 	allDay: arg.allDay
+			// 	})
+			// }
+			// calendar.unselect()
         },
         eventClick: function(arg) {
 			if (confirm('Are you sure you want to delete this event?')) {
@@ -141,7 +145,31 @@
 		});
 	}
 	
-	$('#getEventBtn').on('click',getEventList);	
+	let getEventListAjax = ()=>{
+		let xhr = new XMLHttpRequest();
+
+		xhr.open("GET", "${cPath}/getEventList", true);
+		xhr.onreadystatechange = ()=>{
+			if(xhr.readyState == 4 && xhr.status == 200){
+				// console.log(xhr.responseText);
+				let datas = JSON.parse(xhr.responseText);
+				let list = datas.list;
+				console.log(list);
+				if(calendar != null){
+					console.log("ㅎ");
+					console.log(list.length);
+					for(let i=0 ; i < list.length ; i++){
+						console.log("ㅎ",i);
+						calendar.addEvent(list[i]);
+					}
+				}
+			}
+		};
+		xhr.send();
+	}
+	
+	$('#getEventBtn').on('click',getEventList);
+	$('#ajaxBtn').on('click',getEventListAjax);	
 	
 </script>
 

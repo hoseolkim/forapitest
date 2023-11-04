@@ -12,20 +12,20 @@
 		factory-method="createDelegatingPasswordEncoder"
 	/>
 	
-	<sec:authentication-manager>
-		<sec:authentication-provider>
-			<sec:user-service>
-				<sec:user name="a001" password="{bcrypt}$2a$10$vhQ1VY7D/gOBSxEex2hG4uFKVDoTxyVrAhN6IZb584VVxKAIurOzS" authorities="ROLE_ADMIN"/>
-				<sec:user name="b001" password="{bcrypt}$2a$10$vhQ1VY7D/gOBSxEex2hG4uFKVDoTxyVrAhN6IZb584VVxKAIurOzS" authorities="ROLE_USER"/>
-			</sec:user-service>
-			<sec:password-encoder ref="passwordEncoder"/>
-		</sec:authentication-provider>
-	</sec:authentication-manager>
+<!-- 	<sec:authentication-manager> -->
+<!-- 		<sec:authentication-provider> -->
+<!-- 			<sec:user-service> -->
+<!-- 				<sec:user name="a001" password="{bcrypt}$2a$10$vhQ1VY7D/gOBSxEex2hG4uFKVDoTxyVrAhN6IZb584VVxKAIurOzS" authorities="ROLE_ADMIN"/> -->
+<!-- 				<sec:user name="b001" password="{bcrypt}$2a$10$vhQ1VY7D/gOBSxEex2hG4uFKVDoTxyVrAhN6IZb584VVxKAIurOzS" authorities="ROLE_USER"/> -->
+<!-- 			</sec:user-service> -->
+<!-- 			<sec:password-encoder ref="passwordEncoder"/> -->
+<!-- 		</sec:authentication-provider> -->
+<!-- 	</sec:authentication-manager> -->
 	
-	<sec:http auto-config="true" >
+<!-- 	<sec:http auto-config="true" > -->
 <!-- 	<sec:csrf disabled="true"/> -->
 <!-- 		<sec:intercept-url pattern="/*" access="isAuthenticated()" /> -->
-	</sec:http>
+<!-- 	</sec:http> -->
 	
 	
 	

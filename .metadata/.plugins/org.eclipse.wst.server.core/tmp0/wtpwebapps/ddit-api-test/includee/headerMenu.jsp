@@ -9,11 +9,11 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <ul class="nav px-3 col">
-	<security:authorize url="/board">
-		<li class="nav-item text-nowrap">
-			<a class="nav-link text-white" href="<c:url value='/board'/>">자유게시판</a>
-		</li>
-	</security:authorize>
+<%-- 	<security:authorize url="/board"> --%>
+	<li class="nav-item text-nowrap">
+		<a class="nav-link text-white" href="<c:url value='/calendarUI'/>">아작스캘린더</a>
+	</li>
+<%-- 	</security:authorize> --%>
     <li class="nav-item text-nowrap">
       <a class="nav-link text-white" href="?lang=en">영문</a>
     </li>
@@ -22,18 +22,15 @@
       <a class="nav-link text-white" href="?lang=ko">한글</a>
     </li>
     
-	<security:authorize access="isAnonymous()">
-	    <li class="nav-item text-nowrap">
-	      <a class="nav-link text-white" href="<c:url value='/login' />">sign in</a>
-	    </li>
-	</security:authorize>
-    <security:authorize access="isAuthenticated()">
-	    <li class="nav-item text-nowrap">
-	      <a class="nav-link text-white" href="<c:url value='/logout' />">sign out</a>
-	    </li>
-    </security:authorize>
-    
-    
-    
+<%-- 	<security:authorize access="isAnonymous()"> --%>
+    <li class="nav-item text-nowrap">
+      <a class="nav-link text-white" href="<c:url value='/login' />">sign in</a>
+    </li>
+<%-- 	</security:authorize> --%>
+<%--     <security:authorize access="isAuthenticated()"> --%>
+    <li class="nav-item text-nowrap">
+      <a class="nav-link text-white" href="<c:url value='/logout' />">sign out</a>
+    </li>
+<%--     </security:authorize> --%>
   </ul>
 </nav>
