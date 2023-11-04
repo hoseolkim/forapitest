@@ -1,0 +1,38 @@
+package kr.or.ddit;
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.util.List;
+
+import javax.inject.Inject;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.test.context.junit.jupiter.web.SpringJUnitWebConfig;
+
+import kr.or.ddit.calendar.controller.CalendarController;
+import kr.or.ddit.calendar.vo.CalendarEventVO;
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
+@SpringJUnitWebConfig(locations = "file:src/main/resources/kr/or/ddit/spring/conf/*-context.xml")
+class Noname {
+
+	
+	@Test
+	void test() {
+		LocalDateTime ldt = LocalDateTime.now();
+		LocalDate day = LocalDate.now();
+		String st = ldt.toString();
+		String dy = day.toString();
+		log.info(dy);
+		
+	}
+	
+	@Test
+	void test2() {
+		
+//		log.info("{}",list);
+	}
+
+}

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="ddit-api-test">
-        <property name="context-root" value="ddit-api-test"/>
-        <property name="java-output-path" value="/ddit-api-test/target/classes"/>
-    </wb-module>
-</project-modules>

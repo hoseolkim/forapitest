@@ -1,0 +1,24 @@
+package kr.or.ddit;
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+
+import org.junit.jupiter.api.Test;
+
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
+class Noname {
+
+	@Test
+	void test() {
+		LocalDateTime ldt = LocalDateTime.now();
+		LocalDate day = LocalDate.now();
+		String st = ldt.toString();
+		String dy = day.toString();
+		log.info(dy);
+		
+	}
+
+}

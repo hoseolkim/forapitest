@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
+<c:set value="${pageContext.request.contextPath }" var="cPath" />
+<link href="${cPath }/resources/packages/core/main.css" rel="stylesheet" />
+<link href="${cPath }/resources/packages/daygrid/main.css" rel="stylesheet" />
+<script src="${cPath }/resources/packages/core/main.js" ></script>
+<script src="${cPath }/resources/packages/interaction/main.js" ></script>
+<script src="${cPath }/resources/packages/daygrid/main.js" ></script>
+
+
+<div id="exampleCalendar">
+</div>
+
+
+
+<script>
+	$(()=>{
+		
+	})
+</script>
+
+
+
+
+

@@ -1,0 +1,10 @@
+package kr.or.ddit.calendar.vo;
+
+import java.time.LocalDateTime;
+
+public class CalendarEventVO {
+	private String title;
+	private LocalDateTime start;
+	private LocalDateTime end;
+	private Boolean allDay;
+}

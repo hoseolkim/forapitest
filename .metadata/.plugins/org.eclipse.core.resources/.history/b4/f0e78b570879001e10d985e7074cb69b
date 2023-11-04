@@ -1,0 +1,39 @@
+package kr.or.ddit.calendar.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import kr.or.ddit.calendar.vo.CalendarEventVO;
+
+@Controller
+public class CalendarController {
+	
+	@GetMapping("/calendarUI")
+	public String getCalendarUI() {
+		return "calendar/calendarUI";
+	}
+	
+	@GetMapping
+	public List<CalendarEventVO> getEventList(){
+		
+		List<CalendarEventVO> list = new ArrayList<>();
+		
+		CalendarEventVO e1 = new CalendarEventVO();
+		e1.setAllDay(false);
+		e1
+		
+		
+		
+		
+		return list;
+	}
+	
+	
+	@GetMapping("/calendarUInojs")
+	public String getCalendarUINoJS() {
+		return "calendarUI";
+	}
+}
